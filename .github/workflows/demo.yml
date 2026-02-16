@@ -19,7 +19,7 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     outputs:
-      js-filename: ${{ steps.publish-js-fname.outputs.js-filename }}
+      js-filename: ${{ steps.publish-js-fname.outputs.js-fname }}
     steps:
       - name: Get code
         uses: actions/checkout@v3
